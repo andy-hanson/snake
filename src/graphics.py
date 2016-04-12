@@ -39,13 +39,16 @@ class ExpandingImage:
 
 		self.maxTime = time
 		self.time = 0
+		self.compute_alpha()
 
 	def compute(self):
 		self.time += 1
 		if self.time == self.maxTime:
 			self.dead = 1
+		self.compute_alpha()
 
-		self.alpha = 255 * (1 - self.time/self.maxTime)
+	def compute_alpha(self):
+		self.alpha = 255 * (1 - float(self.time) / self.maxTime)
 
 	def draw(self,surface):
 		minRad = self.startWidth

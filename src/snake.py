@@ -215,6 +215,8 @@ class Snake():
 
 
 	def die(self):
+		helpers.playSound('die')
+
 		headSize = int(round(self.bodyWidth*self.headSizeMult))
 		image = pygame.transform.smoothscale(self.deadHeadImage,(headSize,headSize))
 		image = pygame.transform.rotozoom(image,-180/math.pi*self.direction,1)

@@ -1,5 +1,6 @@
 # Snake
 
+Another silly game I made in high school.
 This poor defenseless 100-foot-long anaconda is being harassed by clown apples.
 Eat them and dodge their fireballs in order to become king of the jungle or something.
 

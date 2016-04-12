@@ -69,7 +69,7 @@ class Main:
 					o.draw(self.screen)
 
 		pygame.display.flip()
-		pygame.display.set_caption('Rhodium Snake August 18 2009 - Framerate ' + str(self.clock.get_fps()) + '/' + str(self.FPS))
+		pygame.display.set_caption('Snake') # 'Framerate ' + str(self.clock.get_fps()) + '/' + str(self.FPS))
 
 	def compute(self):
 		self.joy.compute()

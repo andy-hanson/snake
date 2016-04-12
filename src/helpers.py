@@ -415,3 +415,12 @@ class TimedEvent:
 		if self.time <= 0:
 			self.main.runText(self.text)
 			self.dead = 1
+
+
+def loadOGG(name):
+	return pygame.mixer.Sound(os.path.join('data','sounds',name + '.ogg'))
+
+def playSound(name):
+	sound = loadOGG(name)
+	sound.set_volume(1)
+	sound.play()

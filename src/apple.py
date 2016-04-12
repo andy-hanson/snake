@@ -80,6 +80,7 @@ class Apple:
 	def compute(self):
 		if self.main.snake.headCircle.collideCircle(self.circle):
 			self.main.snake.getApple()
+			helpers.playSound('eat')
 			self.dead = 1
 
 		self.circle.update(self.x,self.y)
